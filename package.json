@@ -1,18 +1,27 @@
 {
   "name": "portfolio-backend-api",
-  "version": "1.1.0",
-  "description": "Portfolio backend API (projects + contacts + Ameer AI)",
+  "version": "2.0.0",
+  "description": "Portfolio backend API (projects + contacts + Ameer AI + quiz platform)",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
     "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.9.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "mongoose": "^8.5.1"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "multer": "^2.1.0",
+    "pdfkit": "^0.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
